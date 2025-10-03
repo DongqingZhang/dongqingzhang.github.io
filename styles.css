@@ -1,0 +1,302 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+.nav {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.nav-item:hover {
+    color: #666;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Profile Section */
+.profile-section {
+    flex: 0 0 250px;
+    text-align: left;
+    padding-left: 0;
+}
+
+.profile-image {
+    margin-bottom: 15px;
+}
+
+.profile-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.profile-info .title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.profile-info .organization {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.profile-info .email {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Contact Info Sidebar */
+.contact-info-sidebar {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.contact-info-sidebar p {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.social-links-sidebar {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.social-links-sidebar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links-sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Social Links with Icons */
+.social-link-with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.social-link-with-icon:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    font-size: 14px;
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+}
+
+.github-icon {
+    color: #333;
+}
+
+.linkedin-icon {
+    color: #0077b5;
+}
+
+.scholar-icon {
+    color: #4285f4;
+}
+
+/* Style icons in publications section */
+.content a i {
+    margin-right: 4px;
+    color: #666;
+}
+
+.content a:hover i {
+    color: #333;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+}
+
+.content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 25px 0 15px 0;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.content ul {
+    margin: 15px 0 15px 20px;
+}
+
+.content li {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.content a {
+    color: #333;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Info */
+.contact-info {
+    margin: 15px 0;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Social Links */
+.social-links {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile-section {
+        flex: none;
+        text-align: left;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .profile-image {
+        margin-bottom: 0;
+    }
+    
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-info h1 {
+        font-size: 20px;
+    }
+    
+    .contact-info-sidebar {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: left;
+        gap: 15px;
+    }
+    
+    .profile-info h1 {
+        font-size: 18px;
+    }
+    
+    .content h2 {
+        font-size: 16px;
+    }
+    
+    .contact-info-sidebar {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #ddd;
+    }
+}
